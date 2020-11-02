@@ -1,6 +1,8 @@
 @import "style.css";
 
 .blog{
+    display: flex;
+    flex-direction: column;
     grid-area: bl;
     padding-bottom: 5px;
     padding-right: 5px;

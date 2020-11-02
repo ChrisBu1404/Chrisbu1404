@@ -18,6 +18,32 @@ p {
     text-align: justify;
 }
 
+.home{
+    grid-area: home;
+}
+
+.chrisblog{
+    grid-area: cb;
+}
+
+.logout{
+    grid-area: lg;
+}
+@media (max-width: 600px){
+.header {
+    grid-area: hd;
+    text-align: center;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "home cb"
+        "lg cb";
+    grid-gap: 5px; 
+    padding: 10px;
+}
+}
 .header {
     grid-area: hd;
     text-align: center;
@@ -27,8 +53,7 @@ p {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap; 
-    padding: 10px
-
+    padding: 10px;
 }
 
 .blog_link {
@@ -96,7 +121,7 @@ p {
 .container_blog{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 150px 1fr 1fr 80px;
+    grid-template-rows: 120px 150px 1fr 1fr 100px;
     grid-template-areas: 
         "hd"
         "sb" 
@@ -155,7 +180,6 @@ p {
 @media (min-width: 600px) and (max-width:999px) {
     .container{
         display: grid;
-        
         grid-template-columns: 280px 3fr;
         grid-template-rows: 80px 1fr 30px;
         grid-template-areas: 
@@ -169,7 +193,6 @@ p {
 @media (min-width: 1000px) {
     .container{
         display: grid;
-        
         grid-template-columns: 400px 4fr;
         grid-template-rows: 80px 1fr 30px;
         grid-template-areas: 
