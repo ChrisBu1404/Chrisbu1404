@@ -87,8 +87,8 @@ h4{
     
 }
 
-.blog_pic{
-    background-image: url("../pictures/burger.jpg");
+.blog_pic_avoid{
+    background-image: url("../pictures/injury.jpg");
     background-size: cover;
     width: 200px;
     height: 200px;
@@ -100,6 +100,49 @@ h4{
     margin-top: 7px;
     margin-bottom: 7px;
 }
+
+.blog_pic_tips{
+    background-image: url("../pictures/tips.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    /* border: solid 1px white; */
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.blog_pic_nutrition{
+    background-image: url("../pictures/nutrition.jpg");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    /* border: solid 1px white; */
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.blog_pic_exercise{
+    background-image: url("../pictures/deadlift.png");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    /* border: solid 1px white; */
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
 
 .card_container {
     display: flex;
