@@ -79,8 +79,15 @@ p {
 
 .sidebar {
     grid-area: sb;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
     color: whitesmoke;
     padding: 10px;
+}
+
+.other_posts{
+    margin: 0px;
 }
 
 .footer {

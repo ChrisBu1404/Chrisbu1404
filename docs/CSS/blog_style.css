@@ -46,7 +46,7 @@
 .container_blog {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 120px 150px 1fr 400px 40px;
+    grid-template-rows: 120px 115px 1fr 420px 40px;
     grid-template-areas:
         "hd"
         "sb"
