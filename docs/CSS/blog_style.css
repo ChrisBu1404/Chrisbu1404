@@ -1,8 +1,6 @@
 @import "style.css";
 
 .blog{
-    display: flex;
-    flex-direction: column;
     grid-area: bl;
     padding-bottom: 5px;
     padding-right: 5px;
@@ -26,13 +24,6 @@
     }
 }
 
-.blogbox{
-    border: solid 1px green;
-    border-radius: 8px;
-    background-color: blue;
-    
-}
-
 .pic{
     padding: 5px;
     display: block;
@@ -43,4 +34,52 @@
 
 .category{
     text-align: center;
+}
+
+.bio{
+    grid-area: bio;
+    color: whitesmoke;
+}
+
+.container_blog{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 150px 1fr 400px 40px;
+    grid-template-areas: 
+        "hd"
+        "sb" 
+        "bl"
+        "bio"
+        "ft";
+    grid-gap: 5px;
+}
+
+@media (min-width: 600px) and (max-width:999px) {
+    .container_blog{
+        display: grid;
+        
+        grid-template-columns: 210px 3fr;
+        grid-template-rows: 80px 1fr 2fr 30px;
+        grid-template-areas: 
+            "hd hd"
+            "sb bl"
+            "bio bl"
+            "ft ft";
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container_blog{
+        display: grid;
+        
+        grid-template-columns: 400px 4fr;
+        grid-template-rows: 80px 1fr 2fr 30px;
+        grid-template-areas: 
+            "hd hd"
+            "sb bl"
+            "bio bl"
+            "ft ft";
+        grid-gap: 5px;
+    }
 }

@@ -20,6 +20,7 @@ p {
 
 .home{
     grid-area: home;
+    margin: 0px;
 }
 
 .chrisblog{
@@ -28,22 +29,9 @@ p {
 
 .logout{
     grid-area: lg;
+    margin: 0px;
 }
-@media (max-width: 600px){
-.header {
-    grid-area: hd;
-    text-align: center;
-    color: whitesmoke;
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-        "home cb"
-        "lg cb";
-    grid-gap: 5px; 
-    padding: 10px;
-}
-}
+
 .header {
     grid-area: hd;
     text-align: center;
@@ -54,6 +42,22 @@ p {
     justify-content: space-between;
     flex-wrap: wrap; 
     padding: 10px;
+}
+
+@media (max-width: 600px){
+    .header {
+        grid-area: hd;
+        text-align: center;
+        color: whitesmoke;
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "home cb"
+            "lg cb";
+        grid-gap: 5px; 
+        padding: 10px;
+    }
 }
 
 .blog_link {
@@ -94,7 +98,7 @@ p {
     align-items: center;
 }
 @media (max-width: 600px){
-.footer{
+    .footer{
     display: flex;
     flex-direction: column;
     grid-area: ft;
@@ -103,7 +107,7 @@ p {
     padding: 0px 10px 0px 10px;
     justify-content: space-around;
     align-items: center;
-}
+    }
 }
 .post_button{
     background-color: #0058ff;
@@ -113,44 +117,13 @@ p {
     height: 25px;
     margin-bottom: 5px;
 }
-.bio{
-    grid-area: bio;
-    color: whitesmoke;
-}
 
-.container_blog{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 120px 150px 1fr 1fr 100px;
-    grid-template-areas: 
-        "hd"
-        "sb" 
-        "bl"
-        "bio"
-        "ft";
-    grid-gap: 5px;
-}
-
-@media (min-width: 600px) and (max-width:999px) {
-    .container_blog{
-        display: grid;
-        
-        grid-template-columns: 210px 3fr;
-        grid-template-rows: 80px 1fr 2fr 30px;
-        grid-template-areas: 
-            "hd hd"
-            "sb bl"
-            "bio bl"
-            "ft ft";
-        grid-gap: 5px;
-    }
-}
-
+/*All rights reserved arr*/
 .arr{
     margin: 0px;
 }
 
-@media (min-width: 1000px) {
+/* @media (min-width: 1000px) {
     .container_blog{
         display: grid;
         
@@ -163,12 +136,13 @@ p {
             "ft ft";
         grid-gap: 5px;
     }
-}
+} */
+
 
 .container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 1fr 600px 30px;
+    grid-template-rows: 80x 1fr 600px 40px;
     grid-template-areas: 
         "hd"
         "bl"
