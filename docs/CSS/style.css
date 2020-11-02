@@ -1,6 +1,7 @@
 a {
     color: whitesmoke;
 }
+
 a:link {
     text-decoration: none;
     color: whitesmoke;
@@ -14,16 +15,16 @@ p {
     text-align: justify;
 }
 
-.home{
+.home {
     grid-area: home;
     margin: 0px;
 }
 
-.chrisblog{
+.chrisblog {
     grid-area: cb;
 }
 
-.logout{
+.logout {
     grid-area: lg;
     margin: 0px;
 }
@@ -36,11 +37,11 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     padding: 10px;
 }
 
-@media (max-width: 600px){
+@media (max-width: 600px) {
     .header {
         grid-area: hd;
         text-align: center;
@@ -48,10 +49,10 @@ p {
         display: grid;
         grid-template-columns: 50px 1fr;
         grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
+        grid-template-areas:
             "home cb"
             "lg cb";
-        grid-gap: 5px; 
+        grid-gap: 5px;
         padding: 10px;
     }
 }
@@ -59,29 +60,30 @@ p {
 .blog_link {
     color: whitesmoke;
 }
+
 .blog_link:link {
     color: whitesmoke;
     text-decoration: none;
 }
+
 .blog_link:hover {
     color: black;
-    
 }
 
-.box{
+.box {
     border: solid 1px black;
     border-radius: 8px;
     background-color: rgb(34,34,34);
 }
 
 
-.sidebar{
+.sidebar {
     grid-area: sb;
     color: whitesmoke;
     padding: 10px;
 }
 
-.footer{
+.footer {
     display: flex;
     flex-direction: row;
     grid-area: ft;
@@ -93,7 +95,8 @@ p {
     justify-content: space-between;
     align-items: center;
 }
-@media (max-width: 600px){
+
+@media (max-width: 600px) {
     .footer{
     display: flex;
     flex-direction: column;
@@ -105,7 +108,8 @@ p {
     align-items: center;
     }
 }
-.post_button{
+
+.post_button {
     background-color: #0058ff;
     border-radius: 8px;
     color: whitesmoke;
@@ -115,15 +119,15 @@ p {
 }
 
 /*All rights reserved arr*/
-.arr{
+.arr {
     margin: 0px;
 }
 
-.container{
+.container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 80x 1fr 600px 40px;
-    grid-template-areas: 
+    grid-template-areas:
         "hd"
         "bl"
         "sb"
@@ -132,11 +136,11 @@ p {
 }
 
 @media (min-width: 600px) and (max-width:999px) {
-    .container{
+    .container {
         display: grid;
         grid-template-columns: 280px 3fr;
         grid-template-rows: 80px 1fr 30px;
-        grid-template-areas: 
+        grid-template-areas:
             "hd hd"
             "sb bl"
             "ft ft";
@@ -145,15 +149,14 @@ p {
 }
 
 @media (min-width: 1000px) {
-    .container{
+    .container {
         display: grid;
         grid-template-columns: 400px 4fr;
         grid-template-rows: 80px 1fr 30px;
-        grid-template-areas: 
+        grid-template-areas:
             "hd hd"
             "sb bl"
             "ft ft";
         grid-gap: 5px;
     }
 }
-
