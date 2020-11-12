@@ -1,4 +1,6 @@
 @import "style.css";
+@import "blog_pics.css";
+@import "posts.css";
 
 h4 {
     text-align: justify;
@@ -38,22 +40,6 @@ h4 {
     text-align: left;
 }
 
-#post_1 {
-    grid-area: post1;
-}
-
-#post_2 {
-    grid-area: post2;
-}
-
-#post_3 {
-    grid-area: post3;
-}
-
-#post_4 {
-    grid-area: post4;
-}
-
 .blogbox {
     display: flex;
     flex-direction: column;
@@ -87,62 +73,6 @@ h4 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-.blog_pic_avoid {
-    background-image: url("../pictures/injury.jpg");
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    /* border: solid 1px white; */
-    border-radius: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 7px;
-    margin-bottom: 7px;
-}
-
-.blog_pic_tips {
-    background-image: url("../pictures/tips.jpg");
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    /* border: solid 1px white; */
-    border-radius: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 7px;
-    margin-bottom: 7px;
-}
-
-.blog_pic_nutrition {
-    background-image: url("../pictures/nutrition.jpg");
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    /* border: solid 1px white; */
-    border-radius: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 7px;
-    margin-bottom: 7px;
-}
-
-.blog_pic_exercise {
-    background-image: url("../pictures/deadlift.png");
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    /* border: solid 1px white; */
-    border-radius: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 7px;
-    margin-bottom: 7px;
 }
 
 .card_container {

@@ -1,0 +1,15 @@
+#post_1 {
+    grid-area: post1;
+}
+
+#post_2 {
+    grid-area: post2;
+}
+
+#post_3 {
+    grid-area: post3;
+}
+
+#post_4 {
+    grid-area: post4;
+}
